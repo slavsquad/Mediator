@@ -1,10 +1,10 @@
-package com.company.components;
+package com.company.components.comboBox;
 
+import com.company.components.Component;
 import com.company.mediator.Mediator;
 
 import javax.swing.*;
 import java.awt.event.ItemEvent;
-import java.awt.event.KeyEvent;
 
 public class AgeComboBox extends JComboBox implements Component {
     private Mediator mediator;

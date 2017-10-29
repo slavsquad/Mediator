@@ -1,4 +1,4 @@
-package com.company.mediator;
+package com.company.customer;
 
 public class Customer {
     private String name;

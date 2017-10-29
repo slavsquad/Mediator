@@ -1,6 +1,15 @@
 package com.company;
 
-import com.company.components.*;
+import com.company.components.checkBox.EmploymentCheckBox;
+import com.company.components.checkBox.MariedCheckBox;
+import com.company.components.comboBox.AgeComboBox;
+import com.company.components.buttons.AddButton;
+import com.company.components.buttons.DeleteButton;
+import com.company.components.buttons.SaveButton;
+import com.company.components.filter.Filter;
+import com.company.components.inputBox.*;
+import com.company.components.list.List;
+import com.company.components.textBox.TextBox;
 import com.company.mediator.Editor;
 import com.company.mediator.Mediator;
 
@@ -16,7 +25,7 @@ public class Main {
         mediator.registerComponent(new AgeComboBox());
         mediator.registerComponent(new MariedCheckBox());
         mediator.registerComponent(new InputPartnerNameBox());
-        mediator.registerComponent(new InputPartnerLastName());
+        mediator.registerComponent(new InputPartnerLastNameBox());
         mediator.registerComponent(new EmploymentCheckBox());
         mediator.registerComponent(new InputCompanyBox());
         mediator.registerComponent(new InputPositionBox());

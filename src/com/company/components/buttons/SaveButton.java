@@ -1,6 +1,7 @@
-package com.company.components;
+package com.company.components.buttons;
 
 
+import com.company.components.Component;
 import com.company.mediator.Mediator;
 
 import javax.swing.*;
@@ -13,11 +14,11 @@ import java.awt.event.ActionEvent;
  * RU: Конкретные компоненты никак не связаны между собой. У них есть только
  * один канал общения – через отправку уведомлений посреднику.
  */
-public class DeleteButton extends JButton  implements Component {
+public class SaveButton extends JButton implements Component {
     private Mediator mediator;
 
-    public DeleteButton() {
-        super("Del");
+    public SaveButton() {
+        super("Save");
     }
 
     @Override
@@ -27,11 +28,11 @@ public class DeleteButton extends JButton  implements Component {
 
     @Override
     protected void fireActionPerformed(ActionEvent actionEvent) {
-        mediator.deleteCustomer();
+        mediator.saveChanges();
     }
 
     @Override
     public String getName() {
-        return "DelButton";
+        return "SaveButton";
     }
 }

@@ -1,6 +1,6 @@
-package com.company.components;
+package com.company.components.inputBox;
 
-public class InputPartnerLastName extends InputBox {
+public class InputPositionBox extends InputBox {
     @Override
     public String getName() {
         return this.getClass().getSimpleName();

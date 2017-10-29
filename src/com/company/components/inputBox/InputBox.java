@@ -1,6 +1,7 @@
-package com.company.components;
+package com.company.components.inputBox;
 
 
+import com.company.components.Component;
 import com.company.mediator.Mediator;
 
 import javax.swing.*;

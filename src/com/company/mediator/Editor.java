@@ -3,9 +3,19 @@ package com.company.mediator;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import com.company.components.*;
+
+import com.company.components.checkBox.EmploymentCheckBox;
+import com.company.components.checkBox.MariedCheckBox;
+import com.company.components.comboBox.AgeComboBox;
 import com.company.components.Component;
-import com.company.components.List;
+import com.company.components.filter.Filter;
+import com.company.components.list.List;
+import com.company.components.buttons.AddButton;
+import com.company.components.buttons.DeleteButton;
+import com.company.components.buttons.SaveButton;
+import com.company.components.inputBox.*;
+import com.company.components.textBox.TextBox;
+import com.company.customer.Customer;
 
 /**
  * EN: Concrete mediator. All chaotic communications between concrete components
@@ -92,8 +102,8 @@ public class Editor implements Mediator {
             case "InputPartnerNameBox":
                 inputPartnerNameBox = (InputPartnerNameBox)component;
                 break;
-            case "InputPartnerLastName":
-                inputPartnerLastNameBox = (InputPartnerLastName)component;
+            case "InputPartnerLastNameBox":
+                inputPartnerLastNameBox = (InputPartnerLastNameBox)component;
                 break;
             case "EmploymentCheckBox":
                 employmentCheckBox = (EmploymentCheckBox) component;

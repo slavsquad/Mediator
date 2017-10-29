@@ -1,12 +1,12 @@
-package com.company.components;
+package com.company.components.checkBox;
 
+import com.company.components.Component;
 import com.company.mediator.Mediator;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
 
-public class MariedCheckBox extends JCheckBox implements Component {
+public class EmploymentCheckBox extends JCheckBox implements Component {
     private Mediator mediator;
 
     @Override
@@ -22,7 +22,7 @@ public class MariedCheckBox extends JCheckBox implements Component {
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return this.getClass().getSimpleName();
     }
 }

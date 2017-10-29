@@ -1,7 +1,8 @@
-package com.company.components;
+package com.company.components.filter;
 
+import com.company.components.Component;
 import com.company.mediator.Mediator;
-import com.company.mediator.Customer;
+import com.company.customer.Customer;
 
 import javax.swing.*;
         import java.awt.event.KeyEvent;

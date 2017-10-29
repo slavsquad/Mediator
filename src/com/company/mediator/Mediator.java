@@ -2,6 +2,7 @@ package com.company.mediator;
 
 
 import com.company.components.Component;
+import com.company.customer.Customer;
 
 import javax.swing.*;
 
