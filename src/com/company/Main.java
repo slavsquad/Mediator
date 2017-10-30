@@ -9,7 +9,7 @@ import com.company.components.buttons.SaveButton;
 import com.company.components.filter.Filter;
 import com.company.components.inputBox.*;
 import com.company.components.list.List;
-import com.company.components.textBox.TextBox;
+import com.company.components.textBox.TextInfo;
 import com.company.mediator.Editor;
 import com.company.mediator.Mediator;
 
@@ -30,7 +30,7 @@ public class Main {
         mediator.registerComponent(new InputCompanyBox());
         mediator.registerComponent(new InputPositionBox());
 
-        mediator.registerComponent(new TextBox());
+        mediator.registerComponent(new TextInfo());
         mediator.registerComponent(new AddButton());
         mediator.registerComponent(new DeleteButton());
         mediator.registerComponent(new SaveButton());

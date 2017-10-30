@@ -14,7 +14,7 @@ import com.company.components.buttons.AddButton;
 import com.company.components.buttons.DeleteButton;
 import com.company.components.buttons.SaveButton;
 import com.company.components.inputBox.*;
-import com.company.components.textBox.TextBox;
+import com.company.components.textBox.TextInfo;
 import com.company.customer.Customer;
 
 /**
@@ -31,7 +31,7 @@ public class Editor implements Mediator {
     private AgeComboBox ageComboBox;
     private MariedCheckBox mariedCheckBox;
     private EmploymentCheckBox employmentCheckBox;
-    private TextBox textBox;
+    private TextInfo textBox;
     private AddButton add;
     private DeleteButton del;
     private SaveButton save;
@@ -84,8 +84,8 @@ public class Editor implements Mediator {
             case "SaveButton":
                 save = (SaveButton)component;
                 break;
-            case "TextBox":
-                textBox = (TextBox)component;
+            case "TextInfo":
+                textBox = (TextInfo)component;
                 break;
             case "InputNameBox":
                 inputNameBox = (InputNameBox)component;
